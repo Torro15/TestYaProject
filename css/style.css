@@ -73,7 +73,7 @@ p {
 .header__info {
     width: 542px;
     height: 444px;
-
+    animation: ani 3.5s forwards;
 }
 
 .header__h1 {
@@ -84,19 +84,7 @@ p {
     text-align: left;
     margin-bottom: 24px;
     line-height: 66px;
-    animation: ani 2.5s forwards;
 }
-
-@keyframes ani {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 
 .header__h1 span {
     display: block;
@@ -120,7 +108,6 @@ p {
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-    ;
 }
 
 .btn {
@@ -206,26 +193,6 @@ p {
 }
 
 
-@keyframes marquee1 {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-@keyframes marquee2 {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-200%);
-    }
-}
-
 #support {
     min-height: 330px;
     padding-top: 75px;
@@ -253,6 +220,7 @@ p {
     line-height: 48.6px;
     text-align: left;
     text-transform: uppercase;
+    
 }
 
 
@@ -663,6 +631,38 @@ p {
     font-weight: 400;
     width: 100%;
 }
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes marquee1 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee2 {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+
 
 @media screen and (max-width: 375px) {
     .container {
