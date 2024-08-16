@@ -453,6 +453,14 @@ p {
     height: 140px;
 }
 
+.plane-vis {
+    animation: plane-animation 5s linear;
+}
+
+.plane-vis-y {
+    animation: plane-animation-y 7s linear;
+}
+
 .achievements__count {
     display: none;
 }
@@ -515,6 +523,12 @@ p {
 .next-arrow img {
     width: 11px;
     height: 20px;
+}
+
+.prev-button {
+    background-color:#D6D6D6;
+    border-color: #D6D6D6;
+    
 }
 
 .count {
@@ -648,6 +662,38 @@ p {
     }
 }
 
+@keyframes plane-animation {
+    0% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-250px);
+    }
+    70% {
+        transform: translateX(-150px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes plane-animation-y {
+    0% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-200px);
+    }
+    70% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
 
 
 @media screen and (max-width: 375px) {
@@ -730,7 +776,6 @@ p {
     .support__info.mobile {
         display: flex;
         flex-direction: column;
-
     }
 
     .support__info-left {
@@ -826,7 +871,6 @@ p {
     .achievements__grid-mobile {
         display: flex;
         overflow: hidden;
-        position: relative;
     }
 
 
@@ -839,13 +883,13 @@ p {
         margin: 0 auto;
     }
     
-    .achievements__grid-mobile .slide.active {
+    .achievements__grid-mobile .achievements__grid-item.active {
         opacity: 1;
     }
 
     .achievements__grid-img {
         position: absolute;
-        top: 36%;
+        top: 35%;
         left: 0;
         z-index: 1;
     }
