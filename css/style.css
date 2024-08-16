@@ -24,10 +24,6 @@ html {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6,
 p {
     margin: 0;
     padding: 0;
@@ -60,14 +56,12 @@ p {
     background-repeat: no-repeat;
     padding-top: 26px;
     background-size: auto;
-
 }
 
 .logo {
     width: 245.17px;
     height: 36px;
     margin-bottom: 63px;
-
 }
 
 .header__info {
@@ -192,7 +186,6 @@ p {
     border-radius: 50%;
 }
 
-
 #support {
     min-height: 330px;
     padding-top: 75px;
@@ -219,17 +212,14 @@ p {
     font-weight: 400;
     line-height: 48.6px;
     text-align: left;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;  
 }
-
 
 .support__text .reverse::before {
     content: "";
     background-image: url(/img/Frame\ 48095655.png);
     position: relative;
 }
-
 
 .support__info-left .color,
 .about__info-right span {
@@ -258,7 +248,6 @@ p {
     max-width: 474px;
     height: 527px;
     background-blend-mode: color-burn;
-
 }
 
 .about__info-right {
@@ -280,7 +269,6 @@ p {
     font-weight: 400;
     border-collapse: collapse;
 }
-
 
 .table td {
     border-right: 2px solid #D0D0D0;
@@ -345,7 +333,6 @@ p {
     line-height: 64px;
 }
 
-
 .achievements__h2-p {
     display: block;
     color: #3057A2;
@@ -356,7 +343,6 @@ p {
     position: absolute;
     top: 71px;
     right: 225px;
-
 }
 
 .achievements__grid {
@@ -492,7 +478,6 @@ p {
     text-align: left;
     color: #313131;
     position: relative;
-
 }
 
 .team__box-item.active {
@@ -952,5 +937,4 @@ p {
     .footer {
         padding: 20px 0 40px 0;
     }
-
 }
