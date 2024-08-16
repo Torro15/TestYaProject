@@ -160,7 +160,7 @@
 
             <!--Карточки для мобильной версии-->
             <div class="achievements__grid-img"><img src="img/Mask group plane.png" alt="Plane"></div>
-            <div class="achievements__grid mobile slides">
+            <div class="achievements__grid-mobile slides">
                 <div class="achievements__grid-item slide column">
                     <div class="achievements__grid-block ">
                         <div class="round"><span>1</span></div>
@@ -202,7 +202,7 @@
         </div>
         <!--Переключатель для мобильной версии-->
         <div class="achievements__count">
-            <button class="arrow prev " id="prev-button"></button>
+            <button class="arrow prev-button"></button>
             <div class="prev-arrow"><img src="img/left-arrow.png" alt="Arrow"></div>
             <div class="point-count">
                 <button class="button button-radio active" type="button" aria-current="true"
@@ -218,7 +218,7 @@
                 </button>
 
             </div>
-            <button class="arrow next " id="next-button"></button>
+            <button class="arrow next-button"></button>
             <div class="next-arrow"><img src="img/right-arrow.png" alt="Arrow"></div>
         </div>
     </section>
@@ -312,6 +312,34 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script js="text/javascript">
+
+        const slides = document.querySelectorAll('.team__box-item');
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+
+        const updateIndicator = () => {
+            const indicator = document.querySelector('.count');
+            indicator.innerText = `${currentIndex + 1}/6`;
+        };
+
+        const showSlides = () => {
+            const slidesToShow = 3;
+            const offset = (currentIndex % totalSlides) * -100 / slidesToShow;
+            const carouselInner = document.querySelector('.team__box');
+            carouselInner.style.transform = `translateX(${offset}%)`; //Смещение
+
+            updateIndicator();
+        };
+
+        const nextSlide = () => {
+            currentIndex = (currentIndex + 1) % totalSlides; // Зацикливание индекса
+            showSlides();
+        };
+        showSlides(); // Отображаем первые слайды
+
+        setInterval(nextSlide, 4000); // Переключение каждые 4 секунды
+    </script>
 </body>
 
 </html>
