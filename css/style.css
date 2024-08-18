@@ -919,16 +919,22 @@ p {
     .achievements__count {
         display: flex;
         align-items: center;
-        width: calc(100% - 160px);
+        width: calc(100% - 200px);
         margin: 0 auto;
+
+    }
+
+
+    .arrow {
+        position: relative;
     }
 
     .prev-arrow {
-        left: 25%;
+        left: 27%;
     }
 
     .next-arrow {
-        right: 25%;
+        right: 27%;
 
     }
 
