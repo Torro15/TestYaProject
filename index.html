@@ -26,7 +26,7 @@
                         турнира по шахматам</p>
                     <div class="header__btns">
                         <a class="btn header__btns-left" href="#support">Поддержать шахматную мысль</a>
-                        <a class="btn header__btns-right" href="#about">Подробнее о турнире</a>
+                        <a class="btn header__btns-right" href="#about">Подробнее</br> о турнире</a>
                     </div>
                 </div>
             </div>
@@ -159,49 +159,56 @@
             </div>
 
             <!--Карточки для мобильной версии-->
-            <div class="achievements__grid-mobile">
-                <div class="achievements__grid-img plane-vis-y"><img src="img/Mask group plane.png" alt="Plane"></div>
-                <div class="achievements__grid-item column">
-                    <div class="achievements__grid-block">
-                        <div class="round"><span>1</span></div>
-                        <p class="achievements__grid-text">Строительство железнодорожной магистрали Москва-Васюки</p>
+            <div class="achievements__grid-img mobile plane-vis-y"><img src="img/Mask group plane.png" alt="Plane">
+            </div>
+            <div class="achievements-carousel">
+                <div class="achievements__grid-mobile">
+                    <div class="achievements__grid-item column">
+                        <div class="achievements__grid-block">
+                            <div class="round"><span>1</span></div>
+                            <p class="achievements__grid-text">Строительство железнодорожной магистрали Москва-Васюки
+                            </p>
+                        </div>
+                        <div class="achievements__grid-block">
+                            <div class="round"><span>2</span></div>
+                            <p class="achievements__grid-text">Открытие фешенебельной гостиницы «Проходная пешка» и
+                                других
+                                небоскрёбов</p>
+                        </div>
                     </div>
-                    <div class="achievements__grid-block">
-                        <div class="round"><span>2</span></div>
-                        <p class="achievements__grid-text">Открытие фешенебельной гостиницы «Проходная пешка» и других
-                            небоскрёбов</p>
+                    <div class="achievements__grid-item">
+                        <div class="round"><span>3</span></div>
+                        <p class="achievements__grid-text">Поднятие сельского хозяйства в радиусе<br>на тысячу
+                            километров:
+                            производство овощей, фруктов, икры, шоколадных конфет</p>
                     </div>
-                </div>
-                <div class="achievements__grid-item">
-                    <div class="round"><span>3</span></div>
-                    <p class="achievements__grid-text">Поднятие сельского хозяйства в радиусе<br>на тысячу километров:
-                        производство овощей, фруктов, икры, шоколадных конфет</p>
-                </div>
-                <div class="achievements__grid-item column">
-                    <div class="achievements__grid-block">
-                        <div class="round"><span>4</span></div>
-                        <p class="achievements__grid-text">Строительство дворца <br>для турнира</p>
+                    <div class="achievements__grid-item column">
+                        <div class="achievements__grid-block">
+                            <div class="round"><span>4</span></div>
+                            <p class="achievements__grid-text">Строительство дворца <br>для турнира</p>
+                        </div>
+                        <div class="achievements__grid-block">
+                            <div class="round"><span>5</span></div>
+                            <p class="achievements__grid-text">Размещение гаражей <br>для гостевого<br>автотранспорта
+                            </p>
+                        </div>
                     </div>
-                    <div class="achievements__grid-block">
-                        <div class="round"><span>5</span></div>
-                        <p class="achievements__grid-text">Размещение гаражей <br>для гостевого<br>автотранспорта</p>
+                    <div class="achievements__grid-item">
+                        <div class="round"><span>6</span></div>
+                        <p class="achievements__grid-text">Постройка сверхмощной радиостанции для передачи всему миру
+                            сенсационных результатов</p>
                     </div>
-                </div>
-                <div class="achievements__grid-item">
-                    <div class="round"><span>6</span></div>
-                    <p class="achievements__grid-text">Постройка сверхмощной радиостанции для передачи всему миру
-                        сенсационных результатов</p>
-                </div>
-                <div class="achievements__grid-item">
-                    <div class="round"><span>7</span></div>
-                    <p class="achievements__grid-text">Создание аэропорта «Большие Васюки» с регулярным отправлением
-                        почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</p>
+                    <div class="achievements__grid-item">
+                        <div class="round"><span>7</span></div>
+                        <p class="achievements__grid-text">Создание аэропорта «Большие Васюки» с регулярным отправлением
+                            почтовых самолётов и дирижаблей во все концы света, включая Лос-Анжелос и Мельбурн</p>
+                    </div>
                 </div>
             </div>
         </div>
         <!--Переключатель для мобильной версии-->
         <div class="achievements__count">
-            <button class="arrow prev-button"></button>
+            <button class="arrow" id="prev-button" type="button"></button>
             <div class="prev-arrow"><img src="img/left-arrow.png" alt="Arrow"></div>
             <div class="point-count">
                 <button class="button button-radio active" type="button" aria-current="true"
@@ -216,7 +223,7 @@
                 <button class="button button-radio" type="button" aria-label="Показать 4 из 5">
                 </button>
             </div>
-            <button class="arrow next-button"></button>
+            <button class="arrow" id="next-button" type="button"></button>
             <div class="next-arrow"><img src="img/right-arrow.png" alt="Arrow"></div>
         </div>
     </section>
@@ -226,16 +233,16 @@
             <div class="team__info">
                 <h2 class="h2-title team__h2">Участники турнира</h2>
                 <div class="team__slider-arrows">
-                    <button class="arrow prev"></button>
+                    <button class="arrow prev" type="button"></button>
                     <div class="prev-arrow"><img src="img/left-arrow.png" alt="Arrow"></div>
                     <div class="count">
                         <p>3<span> / 6</span></p>
                     </div>
-                    <button class="arrow next"></button>
+                    <button class="arrow next" type="button"></button>
                     <div class="next-arrow"><img src="img/right-arrow.png" alt="Arrow"></div>
                 </div>
             </div>
-            <div class="carousel">
+            <div class="team-carousel">
                 <div class="team__box">
                     <div class="team__box-item ">
                         <img src="img/team-item.png" alt="Player">
@@ -247,41 +254,41 @@
                         <img src="img/team-item.png" alt="Player">
                         <p class="team__box-item-name">Эммануил Ласкер</p>
                         <p class="team__box-item-status">Чемпион мира по шахматам</p>
-                        <button class="team__box-item-btn">Подробнее</button>
+                        <button class="team__box-item-btn" type="button">Подробнее</button>
                     </div>
                     <div class="team__box-item">
                         <img src="img/team-item.png" alt="Player">
                         <p class="team__box-item-name">Александр Алехин</p>
                         <p class="team__box-item-status">Чемпион мира по шахматам</p>
-                        <button class="team__box-item-btn">Подробнее</button>
+                        <button class="team__box-item-btn" type="button">Подробнее</button>
                     </div>
                     <div class="team__box-item hidden">
                         <img src="img/team-item.png" alt="Player">
                         <p class="team__box-item-name">Арон Нимцович</p>
                         <p class="team__box-item-status">Чемпион мира по шахматам</p>
-                        <button class="team__box-item-btn">Подробнее</button>
+                        <button class="team__box-item-btn" type="button">Подробнее</button>
                     </div>
                     <div class="team__box-item hidden">
                         <img src="img/team-item.png" alt="Player">
                         <p class="team__box-item-name">Рихард Рети</p>
                         <p class="team__box-item-status">Чемпион мира по шахматам</p>
-                        <button class="team__box-item-btn">Подробнее</button>
+                        <button class="team__box-item-btn" type="button">Подробнее</button>
                     </div>
                     <div class="team__box-item hidden">
                         <img src="img/team-item.png" alt="Player">
                         <p class="team__box-item-name">Остап Бендер</p>
                         <p class="team__box-item-status">Гроссмейстер</p>
-                        <button class="team__box-item-btn">Подробнее</button>
+                        <button class="team__box-item-btn" type="button">Подробнее</button>
                     </div>
                 </div>
                 <!--Переключатель для мобильной версии-->
                 <div class="team__slider-arrows hidden">
-                    <button class="arrow prev"></button>
+                    <button class="arrow prev" type="button"></button>
                     <div class="prev-arrow btn-arrow "><img src="img/left-arrow.png" alt="Arrow"></div>
-                    <div class="count">
+                    <div class="count-mobile">
                         <p>1<span> / 6</span></p>
                     </div>
-                    <button class="arrow next"></button>
+                    <button class="arrow next" type="button"></button>
                     <div class="next-arrow btn-arrow"><img src="img/right-arrow.png" alt="Arrow"></div>
                 </div>
             </div>
@@ -308,37 +315,8 @@
             <p>Все персонажи, события и цитаты являются вымышленными и не принадлежат создателям сайта. С подробностями
                 можно познакомиться в главе XXXIV романа Ильи Ильфа и Евгения Петрова «Двенадцать стульев».</p>
         </div>
-    </footer>
+    </footer>  
     <script src="js/main.js"></script>
-    <script js="text/javascript">
-
-    //Скрипт для карусели с командой
-        const slides = document.querySelectorAll('.team__box-item');
-        const totalSlides = slides.length;
-        let currentIndex = 0;
-
-        const updateIndicator = () => {
-            const indicator = document.querySelector('.count');
-            indicator.innerText = `${currentIndex + 1}/6`;
-        };
-
-        const showSlides = () => {
-            const slidesToShow = 3;
-            const offset = (currentIndex % totalSlides) * -100 / slidesToShow;
-            const carouselInner = document.querySelector('.team__box');
-            carouselInner.style.transform = `translateX(${offset}%)`; //Смещение
-
-            updateIndicator();
-        };
-
-        const nextSlide = () => {
-            currentIndex = (currentIndex + 1) % totalSlides; // Зацикливание индекса
-            showSlides();
-        };
-        showSlides(); // Отображаем первые слайды
-
-        setInterval(nextSlide, 4000); // Переключение каждые 4 секунды
-    </script>
 </body>
 
 </html>

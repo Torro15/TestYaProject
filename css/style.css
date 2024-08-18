@@ -140,7 +140,10 @@ p {
 .running {
     min-height: 60px;
     background-color: #F54932;
-    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
 }
 
 .running__line {
@@ -151,24 +154,12 @@ p {
     font-weight: 400;
     text-transform: uppercase;
     color: #FFFFFF;
-    width: 2335px;
     padding: 18px 0;
+    position: absolute;
+    will-change: transform;
+    animation: marquee 15s linear infinite;
+    animation-delay: -1s;
 }
-
-.running__line-1 {
-    animation: marquee1 20s infinite linear;
-    animation-delay: -20s;
-}
-
-.running__line-1::after {
-    content: '';
-}
-
-.running__line-2 {
-    animation: marquee2 20s infinite linear;
-    animation-delay: -10s;
-}
-
 
 .running__line span {
     padding: 0 6px 0;
@@ -212,7 +203,7 @@ p {
     font-weight: 400;
     line-height: 48.6px;
     text-align: left;
-    text-transform: uppercase;  
+    text-transform: uppercase;
 }
 
 .support__text .reverse::before {
@@ -453,12 +444,16 @@ p {
     height: 140px;
 }
 
+.achievements__grid-img.mobile {
+    display: none;
+}
+
 .plane-vis {
-    animation: plane-animation 5s linear;
+    animation: plane-animation 10s infinite linear;
 }
 
 .plane-vis-y {
-    animation: plane-animation-y 7s linear;
+    animation: plane-animation-y 7s infinite linear;
 }
 
 .achievements__count {
@@ -526,22 +521,24 @@ p {
 }
 
 .prev-button {
-    background-color:#D6D6D6;
+    background-color: #D6D6D6;
     border-color: #D6D6D6;
-    
+
 }
 
-.count {
+.count,
+.count-mobile {
     font-family: "Golos Text", sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
 
-.count span {
+.count span,
+.count-mobile span {
     opacity: 60%;
 }
 
-.carousel {
+.team-carousel {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -557,7 +554,7 @@ p {
 }
 
 .team__box-item {
-    min-width: 394px;
+    min-width: 393px;
     height: 490px;
     text-align: center;
     color: #313131;
@@ -642,17 +639,17 @@ p {
     }
 }
 
-@keyframes marquee1 {
-    0% {
-        transform: translateX(100%);
+@keyframes marquee {
+    from {
+        transform: translateX(0);
     }
 
-    100% {
-        transform: translateX(-100%);
+    to {
+        transform: translateX(-50%);
     }
 }
 
-@keyframes marquee2 {
+/* @keyframes marquee2 {
     0% {
         transform: translateX(0%);
     }
@@ -660,18 +657,21 @@ p {
     100% {
         transform: translateX(-200%);
     }
-}
+} */
 
 @keyframes plane-animation {
     0% {
         transform: translateX(0);
     }
+
     40% {
         transform: translateX(-250px);
     }
+
     70% {
         transform: translateX(-150px);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -682,21 +682,22 @@ p {
     0% {
         transform: translateY(0);
     }
+
     40% {
         transform: translateY(-200px);
     }
+
     70% {
         transform: translateY(-100px);
     }
+
     100% {
         transform: translateY(0);
     }
-
 }
 
 
-
-@media screen and (max-width: 375px) {
+@media (max-width: 540px) and (min-width: 375px) {
     .container {
         padding: 20px;
     }
@@ -710,7 +711,6 @@ p {
         background-image: url(/img/bg-header-375.png);
         background-position: center;
         height: 892px;
-
     }
 
     .logo {
@@ -830,7 +830,6 @@ p {
         width: 100%;
     }
 
-
     .table td:nth-child(odd) {
         border-bottom: none;
         padding-top: 16px;
@@ -868,24 +867,30 @@ p {
         display: none;
     }
 
+    .achievements-carousel {
+        position: relative;
+        max-width: 100%;
+        overflow: hidden;
+        margin: auto;
+    }
+
     .achievements__grid-mobile {
         display: flex;
-        overflow: hidden;
+        transition: transform 0.5s ease;
     }
 
 
     .achievements__grid-mobile .achievements__grid-item {
         display: flex;
-        max-width: 335px;
-        width: 100%;
+        min-width: 100%;
         height: 300px;
         gap: 16px;
         margin: 0 auto;
+        align-items: center;
+        justify-content: space-evenly;
+        align-self: flex-start;
     }
-    
-    .achievements__grid-mobile .achievements__grid-item.active {
-        opacity: 1;
-    }
+
 
     .achievements__grid-img {
         position: absolute;
@@ -906,6 +911,7 @@ p {
     }
 
     .achievements__grid-text {
+        display: block;
         width: 239px;
         font-size: 18px;
     }
@@ -918,11 +924,11 @@ p {
     }
 
     .prev-arrow {
-        left: 23%;
+        left: 25%;
     }
 
     .next-arrow {
-        right: 23%;
+        right: 25%;
 
     }
 
@@ -971,7 +977,7 @@ p {
     }
 
     .team__box-item {
-        min-width: 335px !important;
+        min-width: 100% !important;
     }
 
     .team__slider-arrows.hidden {
