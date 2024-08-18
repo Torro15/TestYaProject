@@ -919,7 +919,7 @@ p {
     .achievements__count {
         display: flex;
         align-items: center;
-        width: 230px;
+        width: calc(100% - 160px);
         margin: 0 auto;
     }
 

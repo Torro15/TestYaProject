@@ -20,7 +20,7 @@ const showSlides = () => {
     const slidesVisible = slidesToShow ? 3 : 1; // Количество 
     const offset = -currentIndex * (100 / slidesVisible);
     const carouselInner = document.querySelector('.team__box');
-    carouselInner.style.transform = `translateX(${offset}%)`; //Смещение
+    carouselInner.style.transform = `translateX(${offset}% )`; //Смещение
 
     updateIndicator();
 };
