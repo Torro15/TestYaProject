@@ -34,7 +34,7 @@ showSlides(); // Отображаем первые слайды
 
 setInterval(nextSlide, 4000); // Переключение каждые 4 секунды
 
-//Карусель для карточек
+//Карусель для карточек c достижениями
 
 
 const images = document.querySelector('.achievements__grid-mobile').querySelectorAll('.achievements__grid-item');
