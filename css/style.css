@@ -142,8 +142,8 @@ p {
     background-color: #F54932;
     overflow-x: hidden;
     position: relative;
-    width: 100vw;
-    max-width: 100%;
+    max-width: 2335px;
+   
 }
 
 .running__line {
@@ -541,7 +541,7 @@ p {
 .team-carousel {
     position: relative;
     overflow: hidden;
-    width: 100%;
+    max-width: 100%;
     margin: auto;
 }
 
