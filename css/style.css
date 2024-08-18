@@ -919,7 +919,7 @@ p {
     .achievements__count {
         display: flex;
         align-items: center;
-        width: calc(100% - 200px);
+        width: calc(100% - 160px);
         margin: 0 auto;
 
     }
@@ -930,11 +930,11 @@ p {
     }
 
     .prev-arrow {
-        left: 27%;
+        left: calc(75% - 187px);
     }
 
     .next-arrow {
-        right: 27%;
+        right: calc(75% - 187px);
 
     }
 
@@ -993,7 +993,7 @@ p {
     }
 
     .team__box-item img {
-        margin: 0;
+        margin: 0 auto 10px;
     }
 
     .footer {
