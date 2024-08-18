@@ -360,7 +360,7 @@ p {
     height: 112px;
     padding: 20px;
     background-color: #E9DED4;
-    background-image: url(/img/bg.png);
+    background-image: url(../img/bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: color-burn;
