@@ -43,7 +43,7 @@ p {
 .header {
     min-height: 700px;
     background-color: #E9DED4;
-    background-image: url(/img/bg.png);
+    background-image: url(../img/bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: color-burn;
@@ -51,7 +51,7 @@ p {
 
 .bg {
     min-height: 700px;
-    background-image: url(/img/Group\ 121.png);
+    background-image: url(../img/Group\ 121.png);
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 26px;
@@ -708,7 +708,7 @@ p {
     }
 
     .bg {
-        background-image: url(/img/bg-header-375.png);
+        background-image: url(../img/bg-header-375.png);
         background-position: center;
         height: 892px;
     }
