@@ -11,7 +11,7 @@ const totalSlides = slides.length;
 let currentIndex = 0;
 
 const updateIndicator = () => {
-    const indicatorToShow = window.innerWidth > 540;
+    const indicatorToShow = window.innerWidth > 540; // Проверка ширины экрана
     const indicator = indicatorToShow ? document.querySelector('.count') : document.querySelector('.count-mobile');
     indicator.innerText = `${currentIndex + 1}/6`;
 };
