@@ -206,12 +206,6 @@ p {
     text-transform: uppercase;
 }
 
-.support__text .reverse::before {
-    content: "";
-    background-image: url(/img/Frame\ 48095655.png);
-    position: relative;
-}
-
 .support__info-left .color,
 .about__info-right span {
     color: #F54932;
