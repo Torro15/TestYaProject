@@ -140,7 +140,7 @@ p {
 .running {
     min-height: 60px;
     background-color: #F54932;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
     width: 100vw;
     max-width: 100%;
