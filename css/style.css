@@ -916,6 +916,7 @@ p {
     .achievements__count {
         display: flex;
         align-items: center;
+        justify-content: center;
         max-width: 60%;
         margin: 0 auto;
     }
