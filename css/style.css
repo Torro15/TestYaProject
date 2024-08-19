@@ -755,10 +755,6 @@ p {
         border-color: #fff;
     }
 
-    .running__line {
-        max-width: 100%;
-    }
-
     .support__info {
         flex-wrap: wrap;
     }
