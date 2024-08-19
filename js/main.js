@@ -41,7 +41,7 @@ const images = document.querySelector('.achievements__grid-mobile').querySelecto
 const totalImages = images.length;
 let i = 0;
 
-// Функция для отображения слайда
+// Отображение слайда
 const showSlide = (index) => {
     const displacement = index * -100; // Сдвигаем на 100% ширины слайда
     document.querySelector('.achievements__grid-mobile').style.transform = `translateX(${displacement}%)`;
